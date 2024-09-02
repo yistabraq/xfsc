@@ -1,7 +1,6 @@
 #include "cmd.h"
 #include "cdm.h"
-#include "eventwindow.h"
-#include <WinUser.h>
+
 const char* cdmtype2str(WORD type)
 {
     switch (type)
@@ -190,7 +189,6 @@ HRESULT cdm_info(int argc, char** argv)
 // Register subcommands for parser
 static cmd_t commands[] = {
     { "info",     "Queries information about the cash dispenser.\nUsage: cdm info <id>", cdm_info, NULL },
-    { "register",     "Register to a service provider.\nUsage: register <logical_name>", cdm_register, NULL },
     { "caps",     "Queries capabilities of the cash dispenser.\nUsage: cdm caps <id>", cdm_caps, NULL },
     { "mix",      "Displays supported mixing algorithms\nUsage: cdm mix <id>", cdm_mixes, NULL },
     { "dispense", "Dispense cash\nUsage: cdm dispense <id> <amount> [currency=USD] [mix=1]", cdm_dispense, NULL },
@@ -211,25 +209,3 @@ HRESULT cdm_dispatch(int argc, char** argv) {
 }
 
 
-// cdm register to all events
-
-HRESULT cdm_register(int argc, char** argv)
-{
-    if (argc != 1) return WFSC_BAD_CMD;
-    Service * svc = get_service(atoi(argv[0]));
-    if (!svc) return WFSC_BAD_CMD;
-    HRESULT hResult;
-    const wchar_t CLASS_NAME[] = L"CEventWindow";
-
-    HWND m_hwnd;
-	if (m_hwnd = FindWindowExW(HWND_MESSAGE, NULL, CLASS_NAME, NULL))
-	{
-		printf("FindWindowHWND for CDM: %p", m_hwnd);
-	}
-	else {
-		printf("HWND for CDM is NULL");
-	}
-
-	hResult = WFSRegister(svc->handle, SYSTEM_EVENTS | USER_EVENTS | EXECUTE_EVENTS | SERVICE_EVENTS, m_hwnd);
-    return hResult;
-}

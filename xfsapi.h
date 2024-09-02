@@ -12,6 +12,7 @@
 
 void init(); // Load msxfs.dll and resolve symbols.
 /****** Common *********************************************************/
+#define WINDOWS_IGNORE_PACKING_MISMATCH
 #include <windows.h>
 
 typedef unsigned short USHORT;

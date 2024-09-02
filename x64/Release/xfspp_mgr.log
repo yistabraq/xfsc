@@ -1,0 +1,10 @@
+2024-09-01-T14:05:43.863	030408	038364	ENTER	__cdecl Windows::BaseRawSharedMemory::BaseRawSharedMemory(unsigned long,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &)	sName = XFSPP_MANAGER
+2024-09-01-T14:05:43.865	030408	038364	EXIT	__cdecl Windows::BaseRawSharedMemory::BaseRawSharedMemory(unsigned long,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &)	sName = XFSPP_MANAGER	elapsed = 0
+2024-09-01-T14:05:43.865	030408	038364	ENTER	__cdecl Windows::SharedMemory<struct `anonymous namespace'::ShMemLayout>::SharedMemory(const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &)	
+2024-09-01-T14:05:43.865	030408	038364	EXIT	__cdecl Windows::SharedMemory<struct `anonymous namespace'::ShMemLayout>::SharedMemory(const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &)		elapsed = 0
+2024-09-01-T14:05:43.865	030408	038364	ENTER	void __cdecl Windows::BaseRawSharedMemory::access(class std::function<void __cdecl(unsigned long,void *)>)	
+2024-09-01-T14:05:43.865	030408	038364	EXIT	void __cdecl Windows::BaseRawSharedMemory::access(class std::function<void __cdecl(unsigned long,void *)>)		elapsed = 0
+2024-09-02-T07:28:14.377	030408	035044	ENTER	__cdecl Windows::SharedMemory<struct `anonymous namespace'::ShMemLayout>::~SharedMemory(void)	
+2024-09-02-T07:28:14.379	030408	035044	EXIT	__cdecl Windows::SharedMemory<struct `anonymous namespace'::ShMemLayout>::~SharedMemory(void)		elapsed = 0
+2024-09-02-T07:28:14.379	030408	035044	ENTER	__cdecl Windows::BaseRawSharedMemory::~BaseRawSharedMemory(void)	
+2024-09-02-T07:28:14.379	030408	035044	EXIT	__cdecl Windows::BaseRawSharedMemory::~BaseRawSharedMemory(void)		elapsed = 0

@@ -32,7 +32,7 @@ int main(int argc, char** argv)
     printf("OK\n");
 
     printf("[+] Establishing connection with XFSManager\n");
-    out = WFSStartUp(3, &apiver);
+    out = WFSStartUp(0x0003001E, &apiver);
     check(out);
     if (out != WFS_SUCCESS) exit(1);
 

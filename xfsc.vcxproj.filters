@@ -27,9 +27,6 @@
     <ClCompile Include="cdm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="eventwindow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="xfsapi.h">
@@ -42,12 +39,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cdm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ewentwindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="common.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

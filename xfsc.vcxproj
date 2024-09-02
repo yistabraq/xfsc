@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{2E0F1465-A776-4407-9180-44BA2645C2A0}</ProjectGuid>
     <RootNamespace>xfsc</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,14 +132,11 @@
     <ClCompile Include="cdm.cpp" />
     <ClCompile Include="cmd.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="eventwindow.cpp" />
     <ClCompile Include="xfsapi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cdm.h" />
     <ClInclude Include="cmd.h" />
-    <ClInclude Include="ewentwindow.h" />
-    <ClInclude Include="common.h" />
     <ClInclude Include="xfsapi.h" />
     <ClInclude Include="xfscdm.h" />
   </ItemGroup>
